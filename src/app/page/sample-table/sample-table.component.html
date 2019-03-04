@@ -1,0 +1,12 @@
+
+<ng-template #tHeader>
+  <tr>
+    <th *ngFor="let item of headerCol.tHeader">{{item}}</th>
+  </tr>
+</ng-template>
+
+<ng-template #tBody>
+  <tr *ngFor="let tBody of headerCol.tBody" >
+    <th *ngFor="let item of tBody">{{item}}</th>
+  </tr>
+</ng-template>

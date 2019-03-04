@@ -1,0 +1,33 @@
+<button (click)='addTable("tHeader", table1);' >Add Table</button>
+<div #table1></div>
+<button (click)='changeHeader();' >Change Table</button>
+
+
+
+<button (click)='addTable("tBody", table2);' >Add Table</button>
+<div #table2></div>
+
+
+<br><br><br>
+<p-card #card>
+    <p-header>
+        Header content here
+    </p-header>
+    Body Content
+    <p-footer>
+        Footer content here
+    </p-footer>
+</p-card>
+
+
+<button (click)="addComp()">Comp Test</button>
+<p-card #cardbasic></p-card>
+
+<h2>Compment Test</h2>
+<div #compTest></div>
+
+
+<h2>Breadcrumb</h2>
+<p-breadcrumb [model]="items" [home]="home" [styleClass] ="camp"></p-breadcrumb>
+
+<div [class]="clsss" style='height:100px;width:100px;'></div>

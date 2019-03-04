@@ -1,0 +1,18 @@
+<ng-template #tHeader>
+  <tr>
+    <th *ngFor="let item of tempData.table_header">{{item}}</th>
+  </tr>
+</ng-template>
+
+<ng-template #tBody>
+  <tr>
+    <th *ngFor="let item of tempData.table_body">{{item}}</th>
+  </tr>
+</ng-template>
+  
+<ng-template #tFooter>
+    <tr>
+      <th *ngFor="let item of tempData.table_footer">{{item}}</th>
+    </tr>
+  </ng-template>
+    

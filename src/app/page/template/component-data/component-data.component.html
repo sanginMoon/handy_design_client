@@ -1,0 +1,42 @@
+<div class="ui-g" style='border:1px solid #ff0000'>
+  <div class="ui-g-12">
+      <div class="ui-g-2">Category</div>
+      <div class="ui-g-4">
+          <p-dropdown [options]="componentData" [(ngModel)]="selectData" optionLabel="name" [showClear]="true"></p-dropdown>
+      </div>
+      <div class="ui-g-2">name</div>
+      <div class="ui-g-4">
+          <input type="text" pInputText [(ngModel)]="selectData.name"/>
+      </div>
+  </div>
+
+  <div class="ui-g-12">
+    <div class="ui-g-2">type</div>
+    <div class="ui-g-4">
+      <input type="text" pInputText [(ngModel)]="selectData.type"/>
+    </div>
+    <div class="ui-g-2">sub type</div>
+    <div class="ui-g-4">
+      <input type="text" pInputText [(ngModel)]="selectData.subType"/>
+    </div>
+  </div>
+
+  <div class="ui-g-12">
+      <div class="ui-g-2">description</div>
+      <div class="ui-g-10">
+          <input type="text" [(ngModel)]="selectData.description" pInputText style='width:100%'/>
+      </div>
+  </div>
+
+  <div class="ui-g-12">
+      <div class="ui-g-2">Data</div>
+      <div class="ui-g-10">
+          <textarea rows="5" pInputTextarea autoResize="autoResize" style='width:100%' [(ngModel)]="selectData.data"></textarea>
+      </div>
+  </div>
+
+  <div class="ui-g-12">
+    <p-button icon="pi pi-check" label="저장" (click)="save();"></p-button>
+    <p-button *ngIf="selectData.id != 'NEW'"  icon="pi pi-check" label="삭제" (click)="delete();"></p-button>
+  </div>
+</div>

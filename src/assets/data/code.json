@@ -1,0 +1,21 @@
+{
+    "boolean"  : [
+        {"code" : true, "name" : "true"},
+        {"code" : false, "name" : "false"}
+    ],
+    "yn"     : [
+        {"code" : "Y", "name" : "YES"},
+        {"code" : "N", "name" : "NO"}
+    ],
+    "category" : [
+        {"code" : "input", "name" : "input"},
+        {"code" : "button", "name" : "button"},
+        {"code" : "data", "name" : "data"},
+        {"code" : "panel", "name" : "panel"},
+        {"code" : "overlay", "name" : "overlay"}
+    ],
+    "domType"   : [
+        {"code" : "attribute", "name" : "Attribute"},
+        {"code" : "property", "name" : "Property"}
+    ]
+}
